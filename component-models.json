@@ -2,25 +2,54 @@
   {
     "id": "rohit",
     "fields": [
-      {
-        "component": "text",
-        "name": "name",
-        "label": "Section Name",
-        "description": "The label shown for this section in the Content Tree"
-      },
-      {
-        "component": "multiselect",
-        "name": "style",
-        "label": "Style",
-        "options": [
-          {
-            "name": "Highlight",
-            "value": "highlight"
-          }
-        ]
-      }
-    ]
-  },
+    {
+      "component": "text",
+      "name": "name",
+      "label": "Card Name (Content Tree)",
+      "description": "Visible name in content tree",
+      "valueType": "string"
+    },
+    {
+      "component": "text",
+      "name": "badgeText",
+      "label": "Badge Text",
+      "valueType": "string",
+      "value": "Pre-Approved"
+    },
+    {
+      "component": "reference",
+      "name": "image",
+      "label": "Main Image",
+      "multi": false
+    },
+    {
+      "component": "text",
+      "name": "title",
+      "label": "Main Title",
+      "valueType": "string",
+      "value": "Get a Personal Loan for your needs"
+    },
+    {
+      "component": "richtext",
+      "name": "description",
+      "label": "Description",
+      "valueType": "string",
+      "value": "Flexible personal loans with budget-friendly EMIs and attractive interest rates."
+    },
+    {
+      "component": "text",
+      "name": "buttonText",
+      "label": "Button Text",
+      "valueType": "string",
+      "value": "Apply Now"
+    },
+    {
+      "component": "aem-content",
+      "name": "buttonLink",
+      "label": "Button Link (URL)"
+    }
+  ]
+},
   {
     "id": "image",
     "fields": [
