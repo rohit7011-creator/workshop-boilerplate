@@ -81,19 +81,13 @@
     ]
   },
   {
-  "id": "offers-curated",
-  "components": [
-    "offer-card"
-  ]
-},
-{
-  "id": "offer-card",
-  "components": []
-},
-{
   "id": "rohit",
   "components": [
-    "offer-card"
+    "offer-card",
+    "text",
+    "image",
+    "button",
+    "title"
   ]
 }
 ]
