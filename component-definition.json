@@ -683,10 +683,10 @@
   "plugins": {
     "xwalk": {
       "page": {
-        "resourceType": "core/franklin/components/block/v1/block",
+        "resourceType": "core/franklin/components/block/v1/block/item",
         "template": {
-          "name": "Rohit",
-          "model": "rohit"
+          "name": "Offer Card",
+          "model": "offer-card"
         }
       }
     }
