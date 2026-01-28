@@ -19,7 +19,8 @@
       "fragment",
       "form",
       "embed-adaptive-form",
-      "rohit"
+      "rohit",
+      "offers-curated"
     ]
   },
   {
@@ -75,7 +76,18 @@
       "wizard",
       "range",
       "card-choice",
-      "rohit"
+      "rohit",
+      "offers-curated"
     ]
-  }
+  },
+  {
+  "id": "offers-curated",
+  "components": [
+    "offer-card"
+  ]
+},
+{
+  "id": "offer-card",
+  "components": []
+}
 ]

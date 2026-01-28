@@ -5575,5 +5575,70 @@
         "valueType": "string"
       }
     ]
-  }
+  },
+  {
+  "id": "offer-card",
+  "fields": [
+    {
+      "component": "text",
+      "name": "badgeText",
+      "label": "Badge Text (e.g. Pre-Approved)",
+      "valueType": "string",
+      "value": "Pre-Approved"
+    },
+    {
+      "component": "reference",
+      "name": "image",
+      "label": "Main Image",
+      "multi": false
+    },
+    {
+      "component": "text",
+      "name": "title",
+      "label": "Main Title",
+      "valueType": "string",
+      "value": "Get Personal Loan for your needs"
+    },
+    {
+      "component": "richtext",
+      "name": "description",
+      "label": "Description / Subtitle",
+      "valueType": "string",
+      "value": "Flexible personal loans with budget-friendly EMIs and attractive interest rates."
+    },
+    {
+      "component": "text",
+      "name": "buttonText",
+      "label": "Button Label",
+      "valueType": "string",
+      "value": "Apply Now"
+    },
+    {
+      "component": "aem-content",
+      "name": "buttonLink",
+      "label": "Button Link",
+      "valueType": "string"
+    }
+  ]
+},
+
+{
+  "id": "offers-curated",
+  "fields": [
+    {
+      "component": "text",
+      "name": "heading",
+      "label": "Section Heading",
+      "valueType": "string",
+      "value": "Exciting offers curated for you"
+    },
+    {
+      "component": "text",
+      "name": "headingEmoji",
+      "label": "Emoji before heading (optional)",
+      "valueType": "string",
+      "value": "✨"
+    }
+  ]
+}
 ]
