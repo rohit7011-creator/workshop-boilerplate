@@ -93,7 +93,7 @@
 {
   "id": "rohit",
   "components": [
-    "offer-card"  // Allow offer-card inside rohit
+    "offer-card"
   ]
 }
 ]

@@ -1,4 +1,30 @@
 [
+   {
+    "id": "rohit",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "imageRohit",
+        "label": "Image Rohit",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAltRohit",
+        "label": "Alt Rohit",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "textRohit",
+        "value": "",
+        "label": "Text Rohit",
+        "valueType": "string"
+      }
+    ]
+  },
   {
     "id": "image",
     "fields": [
@@ -5546,32 +5572,6 @@
         "name": "text",
         "value": "",
         "label": "Text",
-        "valueType": "string"
-      }
-    ]
-  },
-   {
-    "id": "rohit",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "imageRohit",
-        "label": "Image Rohit",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAltRohit",
-        "label": "Alt Rohit",
-        "value": ""
-      },
-      {
-        "component": "richtext",
-        "name": "textRohit",
-        "value": "",
-        "label": "Text Rohit",
         "valueType": "string"
       }
     ]
