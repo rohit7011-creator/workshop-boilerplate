@@ -713,15 +713,15 @@
       }
     },
     {
-      "title": "Offer Card",
-      "id": "offer-card",
+      "title": "Rohit",
+      "id": "rohit",
       "plugins": {
         "xwalk": {
           "page": {
             "resourceType": "core/franklin/components/block/v1/block/item",
             "template": {
-              "name": "Offer Card",
-              "model": "offer-card"
+              "name": "rohit",
+              "model": "rohit"
             }
           }
         }

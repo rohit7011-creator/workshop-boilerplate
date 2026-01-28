@@ -76,18 +76,13 @@
       "wizard",
       "range",
       "card-choice",
-      "rohit",
-      "offers-curated"
+      "rohit"
     ]
   },
   {
   "id": "rohit",
   "components": [
-    "offer-card",
-    "text",
-    "image",
-    "button",
-    "title"
+    "offer-card"
   ]
 }
 ]
