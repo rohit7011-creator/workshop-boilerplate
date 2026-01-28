@@ -2,7 +2,8 @@
   {
     "id": "main",
     "components": [
-      "section"
+      "section",
+      "rohit"
     ]
   },
   {
@@ -24,13 +25,15 @@
   {
     "id": "cards",
     "components": [
-      "card"
+      "card",
+      "rohit"
     ]
   },
   {
     "id": "columns",
     "components": [
-      "column"
+      "column",
+      "rohit"
     ]
   },
   {
