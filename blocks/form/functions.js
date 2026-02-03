@@ -63,7 +63,6 @@ export {
 
 function otpValidationFetchOffers() {
   debugger;
- debugger;
 
 const API_URL =
   "https://applyonlinestage.hdfcbank.com/content/hdfc_savings_forms/api/otpvalidationfetchoffersdetails.json";
@@ -90,7 +89,8 @@ fetch(API_URL, {
     "Content-Type": "application/json",
     Accept: "application/json"
   },
-  credentials: "include"
+  credentials: "include",
+  body: JSON.stringify(payload)   // ✅ PAYLOAD SENT HERE
 })
   .then(res => res.json())
   .then(data => {
