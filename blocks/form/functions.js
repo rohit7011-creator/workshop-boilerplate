@@ -62,43 +62,52 @@ export {
 };
 
 function otpValidationFetchOffers() {
-  debugger;
+  // Optional: pause execution for debugging
+  // debugger;
 
-const API_URL =
-  "https://applyonlinestage.hdfcbank.com/content/hdfc_savings_forms/api/otpvalidationfetchoffersdetails.json";
+  const API_URL =
+    "https://applyonlinestage.hdfcbank.com/content/hdfc_savings_forms/api/otpvalidationfetchoffersdetails.json";
 
-const payload = {
-  requestString: {
-    mobileNumber: "918209896168",
-    dateOfBirth: "19980101",
-    passwordValue: "",
-    userAgent: navigator.userAgent,
-    journeyID: "86e2ad47-19ad-405b-9dd5-a65bbaa7bd58_01_CSA_U_BAS",
-    journeyName: "BAAS_CORPORATE_SALARY_JOURNEY",
-    customerType: "z",
-    employeeTeam: "",
-    PSEUDO_ID: "",
-    Id_token_jwt: "",
-    fetchOtherOffers: "Y"
-  }
-};
+  const payload = {
+    requestString: {
+      mobileNumber: "918209896168",
+      dateOfBirth: "19980101",
+      passwordValue: "",
+      userAgent: navigator.userAgent,
+      journeyID: "86e2ad47-19ad-405b-9dd5-a65bbaa7bd58_01_CSA_U_BAS",
+      journeyName: "BAAS_CORPORATE_SALARY_JOURNEY",
+      customerType: "z",
+      employeeTeam: "",
+      PSEUDO_ID: "",
+      Id_token_jwt: "",
+      fetchOtherOffers: "Y"
+    }
+  };
 
-fetch(API_URL, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    Accept: "application/json"
-  },
-  credentials: "include",
-  body: JSON.stringify(payload)   // ✅ PAYLOAD SENT HERE
-})
-  .then(res => res.json())
-  .then(data => {
-    console.log("✅ API Response:", data);
+  fetch(API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    credentials: "omit",           // usually safe for this API (no cookies needed)
+    body: JSON.stringify(payload)
   })
-  .catch(err => {
-    console.error("❌ API Error:", err);
-  });
-
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log("✅ API Response:", data);
+      
+      // Optional: pretty-print the offers if present
+      if (data?.responseString?.offers) {
+        console.log("Available Offers:", data.responseString.offers);
+      }
+    })
+    .catch(error => {
+      console.error("❌ API Error:", error.message);
+    });
 }
-
