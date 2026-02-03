@@ -105,3 +105,72 @@ function otpValidationFetchOffers() {
       throw error;
     });
 }
+
+function otpValidationFetchOffers() {
+  const API_URL =
+    "https://applyonlinestage.hdfcbank.com/content/hdfc_savings_forms/api/otpvalidationfetchoffersdetails.json";
+
+  const payload = {
+    requestString: {
+      mobileNumber: "918209896168",
+      dateOfBirth: "19980101",
+      passwordValue: "",
+      userAgent:
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36",
+      journeyID: "86e2ad47-19ad-405b-9dd5-a65bbaa7bd58_01_CSA_U_BAS",
+      journeyName: "BAAS_CORPORATE_SALARY_JOURNEY",
+      customerType: "z",
+      employeeTeam: "",
+      PSEUDO_ID: "",
+      Id_token_jwt: "",
+      fetchOtherOffers: "Y"
+    }
+  };
+
+  return fetch(API_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: JSON.stringify(payload)
+  })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then(data => {
+      console.log("API Response:", data);
+      return data;
+    })
+    .catch(error => {
+      console.error("API Error:", error);
+      throw error;
+    });
+}
+
+function otpValidationFetchOffers(){
+const API_URL =
+  "https://applyonlinestage.hdfcbank.com/content/hdfc_savings_forms/api/otpvalidationfetchoffersdetails.json";
+
+const payload = {"requestString":{"mobileNumber":"918209896168","dateOfBirth":"19980101","passwordValue":"","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36","journeyID":"86e2ad47-19ad-405b-9dd5-a65bbaa7bd58_01_CSA_U_BAS","journeyName":"BAAS_CORPORATE_SALARY_JOURNEY","customerType":"z","employeeTeam":"","PSEUDO_ID":"","Id_token_jwt":"","fetchOtherOffers":"Y"}};
+
+fetch(API_URL, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json"
+  },
+  body: JSON.stringify(payload)
+})
+  .then(response => response.json())
+  .then(data => {
+    console.log("API Response:", data);
+  })
+  .catch(error => {
+    console.error("API Error:", error);
+  });
+
+}
