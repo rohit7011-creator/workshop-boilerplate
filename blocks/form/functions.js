@@ -62,6 +62,7 @@ export {
 };
 
 function otpValidationFetchOffers() {
+  debugger;
   const API_URL =
     "https://applyonlinestage.hdfcbank.com/content/hdfc_savings_forms/api/otpvalidationfetchoffersdetails.json";
 
