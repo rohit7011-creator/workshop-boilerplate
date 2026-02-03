@@ -61,7 +61,7 @@ export {
   getFullName, days, submitFormArrayToString, maskMobileNumber,
 };
 
-function fetchOffersDetails() {
+async function fetchOffersDetails() {
   debugger; // 🔴 Execution will pause here
 
   const url =
