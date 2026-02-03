@@ -61,7 +61,7 @@ export {
   getFullName, days, submitFormArrayToString, maskMobileNumber,
 };
 
-async function fetchOffersDetails() {
+ function fetchOffersDetails() {
   debugger; // 🔴 Execution will pause here
 
   const url =
@@ -89,7 +89,7 @@ async function fetchOffersDetails() {
   try {
     debugger; // 🔴 Pause before fetch
 
-    const response = await fetch(url, {
+    const response =  fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -103,7 +103,7 @@ async function fetchOffersDetails() {
 
     debugger; // 🔴 Pause after response
 
-    const data = await response.json();
+    const data =  response.json();
 
     console.log('✅ API Success Response:', data);
 
