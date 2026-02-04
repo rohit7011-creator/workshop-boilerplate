@@ -53,63 +53,53 @@
 
 {
   "id": "offers-cards",
-  "title": "Offers Cards",
-  "description": "Displays curated offer cards with image, title, description and CTA",
   "fields": [
     {
+      "component": "text",
       "name": "heading",
-      "label": "Section Heading",
-      "type": "text",
-      "required": true
+      "label": "Section Heading"
     },
     {
+      "component": "container",
       "name": "cards",
       "label": "Offer Cards",
-      "type": "array",
-      "required": true,
-      "items": {
-        "type": "object",
-        "fields": [
-          {
-            "name": "badge",
-            "label": "Badge Text",
-            "type": "text"
-          },
-          {
-            "name": "image",
-            "label": "Card Image",
-            "type": "image",
-            "required": true
-          },
-          {
-            "name": "title",
-            "label": "Card Title",
-            "type": "text",
-            "required": true
-          },
-          {
-            "name": "description",
-            "label": "Card Description",
-            "type": "textarea",
-            "required": true
-          },
-          {
-            "name": "ctaText",
-            "label": "CTA Text",
-            "type": "text",
-            "required": true
-          },
-          {
-            "name": "ctaLink",
-            "label": "CTA Link",
-            "type": "url",
-            "required": true
-          }
-        ]
-      }
+      "fields": [
+        {
+          "component": "text",
+          "name": "badge",
+          "label": "Badge Text"
+        },
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Card Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Card Title"
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "label": "Card Description"
+        },
+        {
+          "component": "text",
+          "name": "ctaText",
+          "label": "CTA Text"
+        },
+        {
+          "component": "aem-content",
+          "name": "ctaLink",
+          "label": "CTA Link"
+        }
+      ]
     }
   ]
 },
+
   {
     "id": "image",
     "fields": [
