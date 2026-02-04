@@ -80,6 +80,9 @@
     ]
   },
   {
+  "id": "offers-cards"
+},
+  {
   "id": "rohit",
   "components": [
     "offer-card"

@@ -754,7 +754,11 @@
             }
           }
         },
-        
+        {
+  "id": "offers-cards",
+  "title": "Offers Cards",
+  "model": "/component-models/offers-cards/component.model.json"
+},
         {
           "title": "Card choice",
           "id": "card-choice",
