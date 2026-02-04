@@ -62,56 +62,60 @@ export {
 };
 
  function fetchOffersDetails() {
-  debugger; // 🔴 Execution will pause here
+debugger; // 🔴 Execution will pause here
 
-  const url =
-    'https://applyonlinestage.hdfcbank.com/content/hdfc_savings_forms/api/otpvalidationfetchoffersdetails.json';
+const url =
+  "https://applyonlinestage.hdfcbank.com/content/hdfc_savings_forms/api/otpvalidationfetchoffersdetails.json";
 
-  const payload = {
-    requestString: {
-      mobileNumber: '918209896168',
-      dateOfBirth: '19980101',
-      passwordValue: '',
-      userAgent: navigator.userAgent,
-      journeyID: '86e2ad47-19ad-405b-9dd5-a65bbaa7bd58_01_CSA_U_BAS',
-      journeyName: 'BAAS_CORPORATE_SALARY_JOURNEY',
-      customerType: 'z',
-      employeeTeam: '',
-      PSEUDO_ID: '',
-      Id_token_jwt: '',
-      fetchOtherOffers: 'Y',
-    },
-  };
+const payload = {
+  requestString: {
+    mobileNumber: "918209896168",
+    dateOfBirth: "19980101",
+    passwordValue: "",
+    userAgent: navigator.userAgent,
+    journeyID: "86e2ad47-19ad-405b-9dd5-a65bbaa7bd58_01_CSA_U_BAS",
+    journeyName: "BAAS_CORPORATE_SALARY_JOURNEY",
+    customerType: "z",
+    employeeTeam: "",
+    PSEUDO_ID: "",
+    Id_token_jwt: "",
+    fetchOtherOffers: "Y"
+  }
+};
 
-  console.log('🔹 API URL:', url);
-  console.log('🔹 Payload before API call:', payload);
+console.log("🔹 API URL:", url);
+console.log("🔹 Payload before API call:", payload);
 
+(async () => {
   try {
     debugger; // 🔴 Pause before fetch
 
-    const response =  fetch(url, {
-      method: 'POST',
+    const response = await fetch(url, {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
+        "Content-Type": "application/json",
+        Accept: "application/json"
       },
-      body: JSON.stringify(payload),
+      credentials: "include",
+      body: JSON.stringify(payload)
     });
 
-    console.log('🔹 Raw Response:', response);
-    console.log('🔹 Status:', response.status);
+    console.log("🔹 Raw Response:", response);
+    console.log("🔹 Status:", response.status);
 
     debugger; // 🔴 Pause after response
 
-    const data =  response.json();
+    const data = await response.json();
 
-    console.log('✅ API Success Response:', data);
+    console.log("✅ API Success Response:", data);
 
     debugger; // 🔴 Inspect final data
     return data;
   } catch (error) {
-    console.error('❌ API Error:', error);
+    console.error("❌ API Error:", error);
     debugger; // 🔴 Pause on error
     return null;
   }
+})();
+
 }
