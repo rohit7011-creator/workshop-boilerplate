@@ -58,10 +58,10 @@ function maskMobileNumber(mobileNumber) {
 
 // eslint-disable-next-line import/prefer-default-export
 export {
-  getFullName, days, submitFormArrayToString, maskMobileNumber, fetchOffersDetails,
+  getFullName, days, submitFormArrayToString, maskMobileNumber, otpValidationFetchOffersDetails,
 };
 
- function fetchOffersDetails() {
+function otpValidationFetchOffersDetails() {
 debugger; 
 
 const url =
