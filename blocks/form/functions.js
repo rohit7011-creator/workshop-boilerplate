@@ -58,7 +58,7 @@ function maskMobileNumber(mobileNumber) {
 
 // eslint-disable-next-line import/prefer-default-export
 export {
-  getFullName, days, submitFormArrayToString, maskMobileNumber, otpValidationFetchOffersDetails,
+  getFullName, days, submitFormArrayToString, maskMobileNumber, otpValidationFetchOffersDetails,offerListing
 };
 
 function otpValidationFetchOffersDetails() {
@@ -98,6 +98,48 @@ console.log("🔹 Payload before API call:", payload);
       },
       credentials: "include",
       body: JSON.stringify(payload)
+    });
+
+    console.log("🔹 Raw Response:", response);
+    console.log("🔹 Status:", response.status);
+
+    debugger; // 🔴 Pause after response
+
+    const data = await response.json();
+
+    console.log("✅ API Success Response:", data);
+
+    debugger; // 🔴 Inspect final data
+    return data;
+  } catch (error) {
+    console.error("❌ API Error:", error);
+    debugger; // 🔴 Pause on error
+    return null;
+  }
+})();
+
+}
+
+
+function offerListing() {
+debugger; 
+
+const url =
+  "https://applyonlinestage.hdfcbank.com/content/hdfc_savings_forms/api/offerlisting.json";
+
+console.log("🔹 API URL:", url);
+
+(async () => {
+  try {
+    debugger; // 🔴 Pause before fetch
+
+    const response = await fetch(url, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      credentials: "include"
     });
 
     console.log("🔹 Raw Response:", response);
