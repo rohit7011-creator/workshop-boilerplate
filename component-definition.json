@@ -746,7 +746,21 @@
 }
       ]
     },
-
+        {
+          "title": "Offer Card",
+          "id": "offercard",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "custom/components/offercard",
+                "template": {
+                  "jcr:title": "Offer Card",
+                  "fieldType": "panel"
+                }
+              }
+            }
+          }
+        },
     {
       "title": "Custom Form Components",
       "id": "custom-components",

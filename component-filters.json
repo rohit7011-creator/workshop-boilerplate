@@ -77,11 +77,18 @@
       "range",
       "card-choice",
       "rohit",
-      "offers-cards"
+      "offers-cards",
+      "offercard"
     ]
   },
   {
   "id": "offers-cards"
+},
+{
+  "id": "offercards",
+  "components": [
+    "offercard"
+  ]
 },
   {
   "id": "rohit",
