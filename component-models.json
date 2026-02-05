@@ -54,7 +54,7 @@
 {
   "id": "offers-cards",
   "fields": [
-   {
+    {
         "component": "text",
         "name": "offerCardID",
         "label": "Offer Card ID",
@@ -125,9 +125,8 @@
         "name": "cardLink",
         "label": "Card Link",
         "value": "https://applyonline.hdfcbank.com/personal-loans.html_Channel_Branch-EMG_Branch_Code__Agent-code__SM-Code__SE-Code__LG-Code_A60181_TSE-Code_"
-      }   ]
-    }
-  ]
+      }
+      ]  
 },
 
   {
