@@ -746,7 +746,7 @@
 }
       ]
     },
-        {
+                {
           "title": "Offer Card",
           "id": "offercard",
           "plugins": {
@@ -755,7 +755,8 @@
                 "resourceType": "custom/components/offercard",
                 "template": {
                   "jcr:title": "Offer Card",
-                  "fieldType": "panel"
+                  "fieldType": "panel",
+                  "filter": "form"
                 }
               }
             }
