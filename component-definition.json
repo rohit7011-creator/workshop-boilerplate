@@ -749,67 +749,76 @@
 {
   "id": "offer-card",
   "title": "Offer Card",
+  "description": "Custom Offer Card component for AEM Forms",
   "type": "container",
+
   "model": "OfferCardModel",
   "filter": "OfferCardFilter",
+
   "elements": [
     {
+      "name": "offerCardID",
+      "label": "Offer Card ID",
+      "type": "text"
+    },
+    {
       "name": "cardImage",
-      "type": "image",
-      "bind": "offers[selectedOfferKey].cardImage"
+      "label": "Card Image",
+      "type": "image"
     },
     {
       "name": "preApprovedText",
-      "type": "text",
-      "bind": "offers[selectedOfferKey].preApprovedText"
+      "label": "Pre Approved Text",
+      "type": "text"
     },
     {
       "name": "title",
-      "type": "text",
-      "bind": "offers[selectedOfferKey].title"
+      "label": "Title",
+      "type": "text"
     },
     {
       "name": "iconOne",
-      "type": "image",
-      "bind": "offers[selectedOfferKey].iconOne"
+      "label": "Icon One",
+      "type": "image"
     },
     {
       "name": "iconOneText",
-      "type": "text",
-      "bind": "offers[selectedOfferKey].iconOneText"
+      "label": "Icon One Text",
+      "type": "text"
     },
     {
       "name": "iconTwo",
-      "type": "image",
-      "bind": "offers[selectedOfferKey].iconTwo"
+      "label": "Icon Two",
+      "type": "image"
     },
     {
       "name": "iconTwoText",
-      "type": "text",
-      "bind": "offers[selectedOfferKey].iconTwoText"
+      "label": "Icon Two Text",
+      "type": "text"
     },
     {
       "name": "benefitsOneText",
-      "type": "text",
-      "bind": "offers[selectedOfferKey].benefitsOneText"
+      "label": "Benefits Text One",
+      "type": "text"
     },
     {
       "name": "benefitsTwoText",
-      "type": "text",
-      "bind": "offers[selectedOfferKey].benefitsTwoText"
+      "label": "Benefits Text Two",
+      "type": "text"
     },
     {
       "name": "cardLinkText",
-      "type": "text",
-      "bind": "offers[selectedOfferKey].cardLinkText"
+      "label": "CTA Text",
+      "type": "text"
     },
     {
       "name": "cardLink",
-      "type": "link",
-      "bind": "offers[selectedOfferKey].cardLink"
+      "label": "CTA Link",
+      "type": "link"
     }
   ]
 },
+
 
     {
       "title": "Custom Form Components",

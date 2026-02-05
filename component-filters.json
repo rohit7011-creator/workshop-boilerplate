@@ -86,13 +86,15 @@
 {
   "name": "OfferCardFilter",
   "type": "object",
+  "description": "Generic filter for Offer Card component",
+
   "properties": {
-    "selectedOfferKey": {
-      "type": "string",
-      "description": "Key used to select an offer dynamically"
+    "offer": {
+      "type": "object"
     }
   }
 },
+
 
   {
   "id": "rohit",
