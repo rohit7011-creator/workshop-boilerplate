@@ -50,6 +50,25 @@
     }
   ]
 },
+{
+  "name": "OfferCardModel",
+  "type": "object",
+  "properties": {
+    "offerCardID": { "type": "string" },
+    "cardImage": { "type": "string" },
+    "preApprovedText": { "type": "string" },
+    "title": { "type": "string" },
+    "iconOne": { "type": "string" },
+    "iconOneText": { "type": "string" },
+    "iconTwo": { "type": "string" },
+    "iconTwoText": { "type": "string" },
+    "benefitsOneText": { "type": "string" },
+    "benefitsTwoText": { "type": "string" },
+    "cardLinkText": { "type": "string" },
+    "cardLink": { "type": "string" }
+  },
+  "required": ["offerCardID", "title", "cardLink"]
+},
 
 {
   "id": "offers-cards",

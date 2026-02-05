@@ -83,6 +83,17 @@
   {
   "id": "offers-cards"
 },
+{
+  "name": "OfferCardFilter",
+  "type": "object",
+  "properties": {
+    "selectedOfferKey": {
+      "type": "string",
+      "description": "Key used to select an offer dynamically"
+    }
+  }
+},
+
   {
   "id": "rohit",
   "components": [

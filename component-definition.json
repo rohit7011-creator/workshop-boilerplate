@@ -746,6 +746,70 @@
 }
       ]
     },
+{
+  "id": "offer-card",
+  "title": "Offer Card",
+  "type": "container",
+  "model": "OfferCardModel",
+  "filter": "OfferCardFilter",
+  "elements": [
+    {
+      "name": "cardImage",
+      "type": "image",
+      "bind": "offers[selectedOfferKey].cardImage"
+    },
+    {
+      "name": "preApprovedText",
+      "type": "text",
+      "bind": "offers[selectedOfferKey].preApprovedText"
+    },
+    {
+      "name": "title",
+      "type": "text",
+      "bind": "offers[selectedOfferKey].title"
+    },
+    {
+      "name": "iconOne",
+      "type": "image",
+      "bind": "offers[selectedOfferKey].iconOne"
+    },
+    {
+      "name": "iconOneText",
+      "type": "text",
+      "bind": "offers[selectedOfferKey].iconOneText"
+    },
+    {
+      "name": "iconTwo",
+      "type": "image",
+      "bind": "offers[selectedOfferKey].iconTwo"
+    },
+    {
+      "name": "iconTwoText",
+      "type": "text",
+      "bind": "offers[selectedOfferKey].iconTwoText"
+    },
+    {
+      "name": "benefitsOneText",
+      "type": "text",
+      "bind": "offers[selectedOfferKey].benefitsOneText"
+    },
+    {
+      "name": "benefitsTwoText",
+      "type": "text",
+      "bind": "offers[selectedOfferKey].benefitsTwoText"
+    },
+    {
+      "name": "cardLinkText",
+      "type": "text",
+      "bind": "offers[selectedOfferKey].cardLinkText"
+    },
+    {
+      "name": "cardLink",
+      "type": "link",
+      "bind": "offers[selectedOfferKey].cardLink"
+    }
+  ]
+},
 
     {
       "title": "Custom Form Components",
