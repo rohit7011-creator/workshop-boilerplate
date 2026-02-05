@@ -50,51 +50,6 @@
     }
   ]
 },
-{
-  "name": "OfferCardModel",
-  "type": "object",
-  "description": "Model for Offer Card component",
-
-  "properties": {
-    "offerCardID": {
-      "type": "string"
-    },
-    "cardImage": {
-      "type": "string"
-    },
-    "preApprovedText": {
-      "type": "string"
-    },
-    "title": {
-      "type": "string"
-    },
-    "iconOne": {
-      "type": "string"
-    },
-    "iconOneText": {
-      "type": "string"
-    },
-    "iconTwo": {
-      "type": "string"
-    },
-    "iconTwoText": {
-      "type": "string"
-    },
-    "benefitsOneText": {
-      "type": "string"
-    },
-    "benefitsTwoText": {
-      "type": "string"
-    },
-    "cardLinkText": {
-      "type": "string"
-    },
-    "cardLink": {
-      "type": "string"
-    }
-  }
-},
-
 
 {
   "id": "offers-cards",
